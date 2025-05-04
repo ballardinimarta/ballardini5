@@ -196,16 +196,21 @@
 		height: 5vh;
 		transform-origin: 50% 50%;
 		pointer-events: auto;
+		max-width: 100px;
+		@media (max-width: 768px) {
+			max-width: 60px;
+		}
 	}
 	.imagelink a {
 		position: relative;
 		display: inline-block;
 		height: 100%;
+		width: 100%;
 	}
 	.imagelink img {
 		width: 100%;
 		height: 100%;
-		object-fit: cover;
+		object-fit: contain;
 	}
 	.imagelink a::after {
 		content: attr(data-tooltip);
@@ -229,6 +234,14 @@
 		opacity: 1;
 		visibility: visible;
 	}
+	@media (max-width: 768px) {
+		#projects .imagelink {
+			animation: orbit-mobile 10s linear infinite;
+		}
+		#links .imagelink {
+			animation: orbit-reverse-mobile 10s linear infinite;
+		}
+	}
 	@keyframes orbit {
 		from {
 			transform: rotate(0deg) translate(25vw, 0) rotate(0deg);
@@ -243,6 +256,22 @@
 		}
 		to {
 			transform: rotate(-360deg) translate(20vw, 0) rotate(360deg);
+		}
+	}
+	@keyframes orbit-mobile {
+		from {
+			transform: rotate(0deg) translate(45vw, 0) rotate(0deg);
+		}
+		to {
+			transform: rotate(360deg) translate(45vw, 0) rotate(-360deg);
+		}
+	}
+	@keyframes orbit-reverse-mobile {
+		from {
+			transform: rotate(0deg) translate(35vw, 0) rotate(0deg);
+		}
+		to {
+			transform: rotate(-360deg) translate(35vw, 0) rotate(360deg);
 		}
 	}
 </style>
