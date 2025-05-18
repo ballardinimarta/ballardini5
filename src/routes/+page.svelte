@@ -55,7 +55,7 @@
 					rel="noopener noreferrer"
 					data-tooltip="Visit my GitHub"
 				>
-					<img src="/img/github.png" alt="GitHub logo" />
+					<img src="/img/github.gif" alt="GitHub logo" />
 				</a>
 			</div>
 
@@ -76,7 +76,7 @@
 					rel="noopener noreferrer"
 					data-tooltip="Connect on LinkedIn"
 				>
-					<img src="/img/linkedin.png" alt="LinkedIn logo" />
+					<img src="/img/linkedin.gif" alt="LinkedIn logo" />
 				</a>
 			</div>
 			<div class="imagelink">
