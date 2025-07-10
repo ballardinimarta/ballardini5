@@ -8,7 +8,7 @@
 		<section id="projects">
 			<div class="imagelink">
 				<a
-					href="/img/CVMarta.pdf"
+					href="/img/CVMartaEng.pdf"
 					target="_blank"
 					rel="noopener noreferrer"
 					data-tooltip="View my CV"
